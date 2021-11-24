@@ -1,0 +1,28 @@
+{
+  "name": "jumping-cube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosuha/jumping-cube.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.17.1",
+    "pm2": "^5.1.2",
+    "react-redux": "^5.0.7"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kosuha/jumping-cube/issues"
+  },
+  "homepage": "https://github.com/kosuha/jumping-cube#readme"
+}
